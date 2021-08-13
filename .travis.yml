@@ -16,6 +16,5 @@ deploy:
   on: 
     branch: master            
   access_key_id: $awsk
-  secret_access_key: 
-    secure: "$awsp"         
+  secret_access_key: $awsp         
     
