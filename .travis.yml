@@ -1,0 +1,8 @@
+sudo: required    // hey Travis we need super user level access to execute this build 
+services:
+  - docker        // travis will install docker in the container
+
+before_install:
+  - docker build -f Dockerfile -t my-springboot-app .
+  
+ 
