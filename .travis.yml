@@ -4,6 +4,18 @@ services:
   - docker        // travis will install docker in the container
 
 before_install:
-  - docker build -f Dockerfile -t my-springboot-app .
-  
- 
+  - docker build -f Dockerfile -t my-springboot-app . 
+
+deploy:
+  provider: elasticbeanstalk
+  region:  "us-east-2"        
+  app: "Firsttestdockerapp"      
+  env: "Firsttestdockerapp-env"  
+  bucket_name: "elasticbeanstalk-us-east-2-383486092839"     
+  bucket_path: "Firsttestdockerapp"     
+  on: 
+    branch: master            
+  access_key_id: $awsk
+  secret_access_key: 
+    secure: "$awsp"         
+    
