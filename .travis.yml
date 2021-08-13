@@ -8,7 +8,7 @@ before_install:
 
 deploy:
   provider: elasticbeanstalk
-  region:  "us-east-2"        
+  region:  us-east-2        
   app: "first-test-docker-app"      
   env: "Firsttestdockerapp-env"  
   bucket_name: "elasticbeanstalk-us-east-2-383486092839"     
