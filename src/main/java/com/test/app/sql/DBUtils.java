@@ -18,7 +18,7 @@ public class DBUtils {
 		empDetails.setEmpId(2468);
 		empDetails.setEmpName("Happy Harsh");
 		empDetails.setEmpLocation("Gurugram");
-		empDetails.setEmpDept("ABS"); 
+		empDetails.setEmpDept("ABS");  
 		
 		return empDetails;
 	}
