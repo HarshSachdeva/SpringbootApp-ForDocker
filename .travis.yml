@@ -1,7 +1,7 @@
 language: generic
-sudo: required    // hey Travis we need super user level access to execute this build 
+sudo: required     # hey Travis we need super user level access to execute this build 
 services:
-  - docker        // travis will install docker in the container
+  - docker        # travis will install docker in the container
 
 before_install:
   - docker build -f Dockerfile -t my-springboot-app . 
@@ -9,10 +9,10 @@ before_install:
 deploy:
   provider: elasticbeanstalk
   region:  us-east-2        
-  app: "first-test-docker-app"      
-  env: "Firsttestdockerapp-env"  
+  app: "TestSpringBootApp"      
+  env: "Testspringbootapp-env"  
   bucket_name: "elasticbeanstalk-us-east-2-383486092839"     
-  bucket_path: "first-test-docker-app"     
+  bucket_path: "TestSpringBootApp"     
   on: 
     branch: master            
   access_key_id: $awsk
