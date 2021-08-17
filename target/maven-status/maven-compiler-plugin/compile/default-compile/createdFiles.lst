@@ -1,4 +1,4 @@
-com\ibm\saw\MainClass.class
-com\ibm\saw\OptyController.class
-com\ibm\saw\dto\EmpDetails.class
-com\ibm\saw\sql\DBUtils.class
+com\test\app\sql\DBUtils.class
+com\test\app\dto\EmpDetails.class
+com\test\app\MainClass.class
+com\test\app\OptyController.class
